@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrival - Robotics Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .gallery-page {
+            padding: 8rem 2rem;
+            min-height: 100vh;
+            background-color: var(--bg-dark);
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+            background: var(--bg-card);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-btn:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery-page">
+        <div class="container">
+            <a href="index.html" class="back-btn">← Back to Home</a>
+
+            <div class="gallery-header">
+                <h1 class="section-title">Robotics Track <span class="text-gradient">Feedback</span></h1>
+                <p class="section-subtitle">See what our students are building and saying</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="robotics/1.jpg" alt="Feedback 1" loading="lazy"></div>
+                <div class="gallery-item"><img src="robotics/2.jpg" alt="Feedback 2" loading="lazy"></div>
+                <div class="gallery-item"><img src="robotics/3.jpg" alt="Feedback 3" loading="lazy"></div>
+                <div class="gallery-item"><img src="robotics/4.jpg" alt="Feedback 4" loading="lazy"></div>
+                <div class="gallery-item"><img src="robotics/5.jpg" alt="Feedback 5" loading="lazy"></div>
+                <div class="gallery-item"><img src="robotics/6.jpg" alt="Feedback 6" loading="lazy"></div>
+                <div class="gallery-item"><img src="robotics/7.jpg" alt="Feedback 7" loading="lazy"></div>
+                <div class="gallery-item"><img src="robotics/8.jpg" alt="Feedback 8" loading="lazy"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
